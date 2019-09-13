@@ -70,6 +70,7 @@ class ChangeOrganisation extends React.Component {
 							</Col>
 						</FormGroup >
 						<FormGroup controlId="submit" className="submitBtn">
+							<Button className="backbutton_colors chngorgclsbtn">Close</Button>
 							<Button type="submit" className="button-colors chngorgsavebtn">Save</Button>
 						</FormGroup>
 					</form>

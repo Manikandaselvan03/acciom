@@ -143,7 +143,7 @@ const getLoginOptions = (props, classes) => {
 	const getLoginElements = () => {
 		if (props.loginData && props.loginData.token) {
 			return ( <div>
-				<DropdownButton id="account_button" className="button-colors"  title="Account" bsStyle="primary" bsSize="small" pullRight noCaret
+				<DropdownButton className="button-colors account_button"  title="Account" bsStyle="primary" bsSize="small" pullRight noCaret
 					onClick={(event) => { event.preventDefault();}}>
 					<MenuItemBS eventKey="1" className={classes.width}>
 						<Link to="/access_token"  className={classes.width}>Access Token</Link>
@@ -168,7 +168,7 @@ const getLoginOptions = (props, classes) => {
 		} else {
 			return (
 				<div>
-					<DropdownButton  title="Account" bsStyle="primary" bsSize="small" id="dropdown-no-caret loginLink" pullRight noCaret
+					<DropdownButton  title="Account" className="button-colors account_button" bsStyle="primary" bsSize="small" id="dropdown-no-caret loginLink" pullRight noCaret
 						onClick={(event) => { event.preventDefault();}}>
 						<MenuItemBS eventKey="3">
 							<Link to="/forgot_password">Forgot Password</Link>
